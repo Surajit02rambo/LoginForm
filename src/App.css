@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+.App{
+  align-items: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background: url(FormBack.png);
+  background-size: cover;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgba(255, 255, 255, 0.178);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  width: 350px;
+  height: 500px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+label {
+  margin-top: 5px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+input{
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  background-color: transparent;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  height: 15px;
+  color: aliceblue;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+pre{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
+h4{
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+input:focus{
+  outline: none;
+}
+button {
+  margin-top: 20px;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  width: 140px;
+  border: 2px solid white;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-size: 18px;
+  transition: 0.5s all ease-in-out;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.pswd{
+  text-decoration: dotted;
+}
+.dashboard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.178);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  width: 350px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  border-radius: 10px;
+}
+h2{
+  color: white;
+  margin-top: 150px;
+}
+p{
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 16.5px;
+  margin-top: 20px;
+}
+.credentials{
+  margin-top: 20px;
+}
+.check{
+  background: url(tickmark.png);
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: 10px;
+}
+@media only screen and (max-device-width: 450px) {
+  body{
+    background: url(FormBackphn.png) !important;
+    background-size: cover;
   }
 }
